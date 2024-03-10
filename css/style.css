@@ -1,0 +1,169 @@
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-width: 800px;
+	margin: 2em auto;
+	width: 80%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header > img {
+    display: flex;
+    height: auto;
+    width: 200px; 
+    margin-right: 20px;
+}
+
+h1 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    color: #FFEA00;
+    font-size: 50px;
+}
+
+header > section {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: calc(100% - [200]px);
+    height: 200px;
+    background-image: url("../img/banner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #65350F;
+    
+}
+
+nav a {
+    font-size: 16px;
+    font-family: sans-serif; 
+    color: #fff;
+    text-decoration: none; /* Removes the underline from links */
+    padding: 10px; /* Adds space around the text for a larger clickable area */
+}
+
+nav a:hover {
+    color: #795c34;
+    background-color: #432616;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery > article {
+	width: 25%;
+	margin: 1em;
+}
+
+.gallery > article > img {
+	width: 100%;
+}
+
+footer {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    color: #80471c;
+}
+
+footer > img {
+	padding: 0.2em;
+    border-radius: 40px;
+}
+
+footer > span {
+	flex-basis: 100%;
+	text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    gap: 20px;
+    background-color: #9a7b4f;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	margin-left: 30px;
+    padding: 10px;
+}
+
+.form-group label {
+    font-weight: bold; /* Enhances label visibility */
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], select {
+    width: 60%; 
+    padding: 5px; /* Increases padding for better text visibility */
+    border: 1px solid #ccc; /* Standardises border appearance */
+    border-radius: 5px; /* Softens input corners */
+}
+
+.form-group button {
+    width: auto; /* Allows the button to size according to its content */
+    padding: 10px 20px; /* Adds padding for a larger, more clickable area */
+    background-color: #4CAF50; /* Sets a visually distinct background color */
+    color: white; /* Ensures the text is readable */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners */
+    cursor: pointer; /* Changes the cursor to indicate actionability */
+    grid-column: span 2; /* Spans the button across both columns */
+}
+
+table {
+    width: 100%; /* Ensures the table uses the full width of its container */
+    border-collapse: collapse; /* Removes gaps between borders */
+    margin-top: 20px; /* Adds space above the table */
+}
+
+th, td {
+    border-bottom: 1px solid #ddd; /* Adds a light border below each row */
+    padding: 8px; /* Adds padding inside each cell */
+}
+
+th {
+    background-color: #f2f2f2; /* Sets a background colour for header cells */
+    text-align: left; /* Aligns header text to the left */
+}
+
+#home-main {
+    display: flex;
+    flex-direction: row; /* Aligns children side by side */
+    justify-content: space-between; /* Spaces the children out; the article on the left, the image on the right */
+    align-items: flex-start; /* Aligns items at the start of the cross axis */
+}
+
+#home-article {
+    flex: 1; /* Allows the article to grow and fill the space available, minus what the image needs */
+    padding-right: 20px; /* Adds some space between the text and the image */
+}
+
+#home-main .img {
+    flex: 0 1 auto; /* Prevents the image from growing but allows it to shrink if necessary */
+    max-width: 50%; /* Limits the image width to half of the main container's width */
+}
+
