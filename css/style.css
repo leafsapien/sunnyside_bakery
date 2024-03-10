@@ -37,8 +37,6 @@ header > section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    max-width: calc(100% - 200px);
-    height: 200px;
     background-image: url("../img/banner1.png");
     background-repeat: no-repeat;
     background-size: cover;
